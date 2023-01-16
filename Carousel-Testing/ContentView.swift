@@ -34,9 +34,13 @@ struct ContentView: View {
                 ForEach(store.items) { item in
                     // article view
                     ZStack {
-                        RoundedRectangle(cornerRadius: 18)
-                            .fill(item.color)
-                        Text("What's up")
+                        NavigationLink(destination: {Text("Placeholder")})
+                        {
+                            RoundedRectangle(cornerRadius: 18)
+                                .fill(item.color)
+                        }
+                        
+//                        Text("What's up")
                             
                     }
                     .frame(width: 200, height: 200)
